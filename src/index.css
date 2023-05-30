@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.score-board {
+  background-color: #fff;
+  width: 10%;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+/*  style for the game section */
+
+.game {
+  width: 500px; /* Set the width of the game container to 500px */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+
+.game img {
+  width: calc(12.5% - 10px); /* Adjust width to fit 8 candies per row */
+  height: auto;
+  border-radius: 5px;
+  /*box-shadow: 0px 3px 6px rgba(0,0,0,0.16);*/
+  transition: transform 0.3s ease-in-out;
+  margin: 5px; /* Increase margin to match width adjustment */
+}
+
+
+.game img:hover {
+  transform: scale(1.1);
+}
+
+/* Style the body */
+body {
+  width: 100%;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+/* Style the header */
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+/* Style the logo */
+.logo img {
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Style the mute button */
+.icon {
+  background-color: transparent;
+  color: #fb6f92;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.icon img {
+  height: 20px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Style the main content */
+.main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  margin-bottom: 4rem;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+
+
+/* Style the start game button */
+.start-game {
+  background-color: #fb6f92;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.start-game:hover {
+  transform: scale(1.05);
+}
+
+/* Style the footer */
+.footer {
+  background-color: #fb6f92;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-body {
+  margin-top: 120px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: black;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
